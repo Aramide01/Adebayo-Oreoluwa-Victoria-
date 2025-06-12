@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adebayo Oreoluwa Victoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Adebayo Oreoluwa Victoria</h1>
+    <p>Web Designer • Chef • Singer</p>
+  </header>
+
+  <section class="home">
+    <h2>Welcome!</h2>
+    <p>Hello! I'm an undergraduate of the University of Ilorin. I’m passionate about creating delightful digital experiences, cooking delicious meals, and expressing myself through music.</p>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/Adebayo_Oreoluw.jpg" alt="CEO Photo" />
+      <div>
+        <p>I'm a web designer with experience in crafting responsive websites using HTML, CSS, and JavaScript. I'm also a chef and a singer — creativity drives everything I do.</p>
+        <ul>
+          <li>💻 HTML</li>
+          <li>🎨 CSS</li>
+          <li>⚙️ JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <img src="images/Lafarge.jpg" alt="Lafarge Website Screenshot" />
+      <div>
+        <h3>Lafarge Website</h3>
+        <p>Built a company profile website using HTML and CSS.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/Oreoluwa.jpg" alt="Ore's Kitchen" />
+      <div>
+        <h3>Ore's Kitchen</h3>
+        <p>A cooking recipe and service site showcasing my culinary skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Email: 21/66mc091@student.unilorin.edu.ng</p>
+    <p>&copy; 2025 Adebayo Oreoluwa Victoria</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
